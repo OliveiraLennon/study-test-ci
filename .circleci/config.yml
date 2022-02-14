@@ -28,6 +28,7 @@ jobs:
     steps:
       - coveralls/upload:
           parallel_finished: true
+          path_to_lcov: ./coverage/lcov.info
 
 workflows:
   test_parallel_then_upload:
